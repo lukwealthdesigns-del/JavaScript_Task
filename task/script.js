@@ -108,3 +108,25 @@ function weatherAdvice(temperature, isRaining) {
 
 
 // Task 4: ATM Simulation
+
+function atm(balance, action, amount) {
+    if (action === "withdraw"){
+        if (amount <= balance){
+            let newBalance = balance - amount;
+            console.log(`You have successfully withdrawn $${amount}, your current balance is $${newBalance}`)
+        } else if (amount > balance){
+            console.log(`Insufficient Funds`)
+        }
+    } else if (action === "deposit") {
+        let currentBalance = balance + amount;
+        console.log(`You have successfully added $${amount}, Your current balance is ${currentBalance}`)
+    }
+
+}
+
+
+// Task 5: Personal Assistant Function
+
+function personalAssistant(){
+    
+}
