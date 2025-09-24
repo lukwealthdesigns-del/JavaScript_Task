@@ -108,6 +108,9 @@ function weatherAdvice(temperature, isRaining) {
 
 
 // Task 4: ATM Simulation
+let balance = 1000;
+let action = "withdraw";
+let amount = 500;
 
 function atm(balance, action, amount) {
     if (action === "withdraw"){
@@ -128,5 +131,5 @@ function atm(balance, action, amount) {
 // Task 5: Personal Assistant Function
 
 function personalAssistant(){
-    
+
 }
