@@ -1,6 +1,6 @@
 
 // Task 1: Simple Grading System
-let score = 100;
+
 
 function getGrade(score) {
     
@@ -20,46 +20,13 @@ function getGrade(score) {
     
 }
 
-getGrade(score)
 
 
 // Task 2: Discount Calculator
 
-
-
-
-
-// function calculatePrice(price, customerType, isFirstPurchase) {
-    
-
-//     if (customerType === "student" && isFirstPurchase === true) {
-//         console.log(`You are a ${customerType} and its your first purchase, you have 15% Discount`)
-//     } else if (customerType === "student" && isFirstPurchase === false) {
-//         console.log(`You are a ${customerType} but not your first purchase, you have 10% Discount`)
-//     } 
-//     if (customerType === "senior" && isFirstPurchase === true) {
-//         console.log(`You are a ${customerType} and its your first purchase, you have 20% Discount`)
-//     } else if (customerType === "senior" && isFirstPurchase === false) {
-//         console.log(`You are a ${customerType} but not your first purchase, you have 15% Discount`)
-//     } 
-//     if (customerType === "senior" && isFirstPurchase === true) {
-//         console.log(`You are a ${customerType} and its your first purchase, you have 15% Discount`)
-//     } else if (customerType === "senior" && isFirstPurchase === false) {
-//         console.log(`You are a ${customerType} but not your first purchase, you have 10% Discount`)
-//     } 
-    
-
-// }
-let price = 1000;
-let customerType = "student";
-let isFirstPurchase = true;
-
 function calculatePrice(price, customerType, isFirstPurchase) {
     let discount = 0;
     
-
-   
-
     if (customerType === "student") {
         discount = 0.10;
     } else if (customerType === "senior") {
@@ -87,23 +54,23 @@ function calculatePrice(price, customerType, isFirstPurchase) {
 
 
 // Task 3: Weather Advisor
-let temperature = 30;
-let isRaining = false;
+
 
 function weatherAdvice(temperature, isRaining) {
     if (temperature <= 32 && isRaining === true){
         console.log(`freezing rain! Stay inside!`)
     } else if (temperature < 32){
-        console.log(`Very cold, wear a heavy jacket`)
+        console.log(`Very cold, wear a heavy jacket and bring an umbrella`)
     } else if (temperature >= 32 && temperature <= 60){
-        console.log(`Chilly, bring a jacket.`)
+        console.log(`Chilly, bring a jacket and an umbrella.`)
     } else if (temperature >= 60 && temperature <=80){
-        console.log(`Nice weather!`)
+        console.log(`Nice weather! No umbrella needed.`)
     } else if (temperature > 80) {
         console.log(`It's hot, stay hydrated`)
     }
 
 }
+
 
 
 
