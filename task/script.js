@@ -98,5 +98,14 @@ function atm(balance, action, amount) {
 // Task 5: Personal Assistant Function
 
 function personalAssistant(){
+    let time = prompt(`Kindly enter the time in hour`);
+    let weather = prompt(`Kindly enter the weather (sunny, rainy, cloudy`);
+    let dayType = prompt (`Kindly enter your day type (workday, weekend, holiday)`);
+
+    if (time === "" || weather === "" || dayType === ""){
+        console.log(`Kindly input the field`)
+
+    } else if (time === 10 && weather === "sunny" && dayType === "weekend")
+        console.log("It's sunny, You can enjoy your weekend at home")
 
 }
